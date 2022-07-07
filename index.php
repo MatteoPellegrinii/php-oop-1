@@ -24,13 +24,12 @@ class Movie {
 }
 
 $newMov1 = new Movie('pippo', 'Cartoon', 'english');
-var_dump($newMov1);
 
 $newMov2 = new Movie('The lord of the rings', 'fantasy', 'english');
-var_dump($newMov2);
 
 $newMov3 = new Movie('Troy', 'war', 'english');
-var_dump($newMov3);
+
+
 
 ?>
 
@@ -43,7 +42,25 @@ var_dump($newMov3);
     <title>Document</title>
 </head>
 <body>
-    <h1> <?php $newMov1->name ?> </h1>
+    <div>
+        <h3> <?php echo $newMov1->name ?> </h3>
+        <span> <?php echo $newMov1->genre ?> </span>
+        <span> <?php echo $newMov1->language ?> </span>
+        <span> <?php echo $newMov1->rating ?> </span>
+    </div>
+    <div>
+        <h3> <?php echo $newMov2->name ?> </h3>
+        <span> <?php echo $newMov2->genre ?> </span>
+        <span> <?php echo $newMov2->language ?> </span>
+        <span> <?php echo $newMov2->rating ?> </span>
+    </div>
+    <div>
+        <h3> <?php echo $newMov3->name ?> </h3>
+        <span> <?php echo $newMov3->genre ?> </span>
+        <span> <?php echo $newMov3->language ?> </span>
+        <span> <?php echo $newMov3->rating ?> </span>
+    </div>
+
     
 </body>
 </html>
